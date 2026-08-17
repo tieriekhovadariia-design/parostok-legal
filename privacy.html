@@ -95,7 +95,7 @@
       <span class="name">Parostok · Паросток</span>
     </div>
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated: 13 July 2026</p>
+    <p class="meta">Last updated: 17 August 2026</p>
   </div>
 </header>
 
@@ -121,9 +121,12 @@
       <li><strong>Content you create in the app</strong> — your gardens and selected plants, journal entries, checklists and care logs, onboarding-consultation answers, and the messages you send to the in-app AI assistant ("Пан Тепличний").</li>
       <li><strong>Your selected growing region</strong> — the region you choose yourself from a list inside the app. We do <strong>not</strong> access your device's GPS or precise location.</li>
       <li><strong>Subscription status</strong> — whether you have an active Parostok Plus subscription or free trial. Payment is handled entirely by Apple or Google; we never receive or store your card or bank details.</li>
-      <li><strong>Basic technical and security data</strong> — such as app and runtime version and limited technical logs generated when you use the app, used to keep the service running securely and to deliver over-the-air updates and (in the future) push notifications.</li>
+      <li><strong>Basic technical and security data</strong> — such as app and runtime version and limited technical logs generated when you use the app, used to keep the service running securely and, in the future, to deliver push notifications.</li>
+      <li><strong>Photos you attach in the AI assistant</strong> — if you attach a photo of a plant to a message, the image is sent to our AI provider to generate a reply and is <strong>not stored on our servers</strong>: we keep only a flag that a photo was attached, which is used to apply usage limits. A small preview stays in the chat history on your device. We open your photo library only at the moment you choose a picture, and never in the background.</li>
+      <li><strong>Product analytics events</strong> — a small set of in-app events (for example, opening the AI assistant, tapping a suggested question, sending a message, dismissing a card), each recorded with your account identifier, the event name, the app version and platform, and a few event properties such as where the screen was opened from. We use these only in aggregate, to understand which features are used and where the app is confusing.</li>
+      <li><strong>Feedback you send us</strong> — if you choose to submit feedback through the rating prompt, we store the text you wrote (up to 2,000 characters) together with your account identifier, the app version, and the platform, so we can understand and act on it.</li>
     </ul>
-    <div class="callout">We do not collect precise location, contacts, photos, health data, or advertising identifiers, and we do not run any third-party crash-reporting or analytics SDK. Parostok contains no advertising and no cross-app tracking. If we add any such feature in future, we will update this policy first.</div>
+    <div class="callout">We do not collect precise location, contacts, health data, or advertising identifiers, and we never scan or upload your photo library. We do not use any third-party analytics or crash-reporting SDK: the product analytics described above are stored in our own database, and are never shared with advertising networks or data brokers. Parostok contains no advertising and no cross-app tracking. If we add any such feature in future, we will update this policy first.</div>
   </section>
 
   <section>
@@ -133,11 +136,13 @@
       <thead><tr><th>Purpose</th><th>Data used</th><th>Legal basis</th></tr></thead>
       <tbody>
         <tr><td>Create and run your account; sync your gardens across devices</td><td>Account data, content you create</td><td>Performance of a contract</td></tr>
-        <tr><td>Provide the AI assistant. Your message and relevant details about your plants are sent to our AI provider to generate a reply</td><td>Chat messages, related plant data</td><td>Performance of a contract</td></tr>
+        <tr><td>Provide the AI assistant. Your message, any photo you attach, and relevant details about your plants are sent to our AI provider to generate a reply</td><td>Chat messages, attached photos, related plant data</td><td>Performance of a contract</td></tr>
         <tr><td>Show weather relevant to your growing region</td><td>Your selected region</td><td>Legitimate interest in providing a useful feature</td></tr>
         <tr><td>Manage subscriptions and trials</td><td>Subscription status</td><td>Contract; legal obligation (record-keeping)</td></tr>
         <tr><td>Keep the service running, secure, and up to date</td><td>Technical and security data</td><td>Legitimate interest in a reliable, secure service</td></tr>
         <tr><td>Prevent abuse and control service costs (e.g. usage limits on AI requests)</td><td>Account data, request counts</td><td>Legitimate interest in a secure, sustainable service</td></tr>
+        <tr><td>Understand which features are used, and improve the app</td><td>Product analytics events, account identifier</td><td>Legitimate interest in improving the service</td></tr>
+        <tr><td>Read and act on feedback you choose to send us</td><td>Feedback text, account identifier</td><td>Legitimate interest in improving the service</td></tr>
       </tbody>
     </table>
     <p>We do not use your data for advertising, profiling, or automated decisions that produce legal effects about you. We do not sell your data.</p>
@@ -150,11 +155,10 @@
       <thead><tr><th>Provider</th><th>Purpose</th><th>Location</th></tr></thead>
       <tbody>
         <tr><td>Supabase</td><td>Database, authentication, and backend hosting of your account and content</td><td>European Union (Ireland)</td></tr>
-        <tr><td>Anthropic</td><td>Generating AI assistant replies from the message and plant context you send</td><td>United States</td></tr>
+        <tr><td>Anthropic</td><td>Generating AI assistant replies from the message, any attached photo, and plant context you send. Attached photos are used to produce the reply and are not retained by us</td><td>United States</td></tr>
         <tr><td>Open-Meteo</td><td>Weather data. Receives only the approximate coordinates of your selected region — no name, email, or account identifier</td><td>European Union</td></tr>
         <tr><td>Apple / Google</td><td>Sign-in, billing for subscriptions and trials, app distribution, and (in future) push delivery</td><td>United States</td></tr>
         <tr><td>RevenueCat</td><td>Managing your subscription status and entitlements across platforms. Receives purchase identifiers and an app user identifier — not your card or bank details</td><td>United States</td></tr>
-        <tr><td>Expo (EAS)</td><td>Over-the-air app updates and (in future) push notifications</td><td>United States</td></tr>
       </tbody>
     </table>
     <p>We may also disclose data where required by law, or to protect the rights, safety, or property of our users or ourselves.</p>
@@ -173,6 +177,7 @@
   <section>
     <h2><span class="num">7</span> How long we keep your data</h2>
     <p>We keep your account data and content for as long as your account exists. When you delete your account, we remove your personal data from our live systems promptly. Residual copies contained in encrypted backups are overwritten in the normal backup cycle, within 30 days.</p>
+    <p>Product analytics events are retained for up to 24 months and then deleted. Feedback you send us is retained for as long as it remains relevant to product decisions, and in any case no longer than 24 months.</p>
     <p>Some data is also stored locally on your device (Parostok works largely offline). Deleting the app removes that local data from your device.</p>
   </section>
 
